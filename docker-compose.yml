@@ -27,7 +27,7 @@ services:
       - droid_base
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.droid.rule=Host(`droidback.localhost`)"
+      - "traefik.http.routers.droid.rule=Host(`droidback.it-apostol.ru`)"
       - "traefik.http.routers.droid.entrypoints=http"
       - "traefik.http.routers.droid.service=droid_app"
       - "traefik.http.services.droid_app.loadbalancer.server.port=5000"
